@@ -1,0 +1,126 @@
+What is "Specificity" about?
+It is all about resolving conflict that rises from multiple CSS rule which target the same element.
+
+What's a "Rule" in CSS?
+A combination of selector (WHAT to style) and declaration(HOW to style).
+
+
+
+-----------------------DIVING DEEPER INTO CSS ----------------------
+
+percentage always refer to the value given by its parent element.
+<section>
+    <h1>Pawan bisht</h1>   
+                                    h1{
+                                        height :100% that means the height provided by the section (parent) to h1(child)
+                                    }
+</section>
+
+-----------------------BOX model ----------------------------
+
+By default height and width are only affects or update the content (not padding, border or margin)
+We can't set box-model to margin , we can only do it upto border-box
+
+box-sizing:border-box
+
+Display property
+
+Sometime starting from a new line in code editor coz a new line starting div sarting from a new line 
+so ( if we want two adjacent element on the same line) we need to use calc(100% - <existing element> - 5px)
+new line chanrater in html takes approx 5px length
+
+
+
+ ****     Psuedo classes and Psuedo element  ----> read about them
+
+                    Class               or                       Id
+1. Are reusable                                             1. Only used once per percentage
+2. Allow you to mark and name things                        2.Also got non-CSS meaning(Linking in simgle page)
+          for styling purpose only
+3.Most-used selector type                                   3. Use if availabel anyways
+
+
+        -------    !important  ------------------
+        Overwrites "SPECIFICITY"(get high precedence) and all other selectors
+        DONT use !important generally
+
+
+        ------------ :not() -------------------
+a:not(.active)   
+anchor tag that dont have the active classes
+
+            can I Use.com
+
+Box-shadow
+
+float means that u can overwrite the positioning and tell the browser to push an element to the
+left or right of the page.
+
+
+-------------------POSITION----------------
+static     ------> default ( all html element having this property as by default)
+absolute, relative, fixed, sticky.
+top, left, right, bottom these refer to the initial position in the document flow.
+viewport simply means is the visible part of your web  or positioning context. 
+
+.parent .child-1{
+  top:100px;
+}  No affect on styling
+Note * All the positioning changes we want to apply right now are only possible if you apply 
+a value that is different from static, so different from the default value.
+.parent .child-1{
+  position: fixed;
+}
+Let's focus on to the maybe second thing that we can see right here because the element now 
+is now basically not existing for the other elements anymore, as we can see it the second 
+element, so our background image, that's what it's called element now overtook this position 
+the navigation bar element had. We can still see the navigation bar element right here but 
+the background image is exactly at the same position and this happens because by applying 
+position fixed to this element, to the navigation bar element, we took it out of the actual 
+document flow.
+This simply means that for all the other elements here, this navigation bar element is no 
+longer existing.
+Actually we create an inline-block level element.
+
+Absolute positioned ----->   containing element
+Fixed positioned -------->    view Port
+we know that these are fixed elements,we know that these are taken out of the document flow,
+they all have z-index of zero and because of that, the order in the HTML document defines 
+the order these are displayed along the z-axis.
+
+relative ---------------->   its own current position
+      if it go outside the parent element, then we can use overflow: hidden
+      but if the parent is body then we should make changes on two places 
+      1. At html as overflow : hidden
+      2. At body as overflow : hidden  otherwise we get the unexpected behaviour
+sticky    ----------> combination of relative and fixed.
+    behave like relative if position: sticky but no top, left, right, bottom is apllied.
+    behave like fixed if above 4 are apllied.
+
+
+Stacking context 
+
+ --------------------- BACKGROUND ----------------------------
+
+The percentage values, you can define how much of the excess space,so of the parts of the 
+image that do not make it into the container,how these parts should be distributed.
+Now regarding the width, the full image is displayed in the container, it's not 
+cropped on either the left or the right, so we can enter whatever we want here for the first 
+value,
+
+If we reload,this will actually lead to our image being pushed down because and that's 
+something you have to know, the default if you only set one value, is 50%.
+So if I set 50 and I reload, we get the exact same result as if we said no second value 
+at all. 50% means of the parts of the image that do not fit into the container, so that 
+are cropped of, 50% will be cropped at the bottom and 50% will be cropped at the top.
+
+If we set this to 10%, only 10% will be cropped at the top which means that more parts
+are cropped at the bottom, so the image is effectively pushed down in its container.
+
+If we set this to 100% on the other hand, all the content that has to be cropped will be cropped at
+
+the top and nothing will be cropped at the bottom,
+
+so this results in the bottom edge of the image being perfectly aligned to the bottom edge of the container
+
+and everything is cropped at the top.
