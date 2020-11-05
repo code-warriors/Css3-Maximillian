@@ -80,7 +80,12 @@ position fixed to this element, to the navigation bar element, we took it out of
 document flow.
 This simply means that for all the other elements here, this navigation bar element is no 
 longer existing.
-Actually we create an inline-block level element.
+Actually we create an inline-block level element whenever we apply "fixed" position.
+In this viewPort is the positioning context.The position of the element only depends
+upon the viewport.
+
+If two elements having same z-index then the one get preference which is after the first One.
+So the latest one overlapped the previous one.
 
 Absolute positioned ----->   containing element
 Fixed positioned -------->    view Port
