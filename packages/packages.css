@@ -1,0 +1,77 @@
+main{
+    padding-top:32px ;
+}
+.background{
+    background: url("../images/plans-background.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.plans{
+    width: 80%;
+    box-sizing: border-box;
+    margin:15px 0px;
+    border: 4px solid #0e4f1f;
+    border-left: none ;
+    position: relative;
+}
+
+.package__badge{
+    position: absolute;
+    top: 0;
+    right:0;
+    font-size: 17px;
+    color: rgb(163, 31, 31);
+    background-color: greenyellow;
+    padding: 17px;
+    margin: 0;
+    border-radius: 8px;
+
+}
+
+.plan{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 32px;
+}
+
+.plus{
+    background: #7bed9f;
+}
+.free{
+    background: #c7ecee;
+    float: right;
+    border: 4px solid #0e4f1f;
+    border-right: none !important;
+}
+.plan .plan__sub_title{
+    color: #636e72;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.plan .plan__description{
+    border: 1px solid black;
+    background: white;
+    padding:8px 16px;
+}
+.premium{
+    background: #0e4f1f;
+}
+.premium .plan .plan__title{
+    color: white;
+}
+.premium .plan .plan__sub_title{
+    color: #b2bec3;
+}
+
+.plans:hover,
+.plans:active{
+    border-color: red;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
