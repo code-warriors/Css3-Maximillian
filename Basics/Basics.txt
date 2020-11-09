@@ -68,6 +68,7 @@ viewport simply means is the visible part of your web  or positioning context.
 }  No affect on styling
 Note * All the positioning changes we want to apply right now are only possible if you apply 
 a value that is different from static, so different from the default value.
+
 .parent .child-1{
   position: fixed;
 }
@@ -83,6 +84,8 @@ longer existing.
 Actually we create an inline-block level element whenever we apply "fixed" position.
 In this viewPort is the positioning context.The position of the element only depends
 upon the viewport.
+
+
 
 If two elements having same z-index then the one get preference which is after the first One.
 So the latest one overlapped the previous one.
@@ -105,14 +108,20 @@ Absolute and relative are taking the element out of the document flow.
 relative ---------------->   its own current position
       if it go outside the parent element, then we can use overflow: hidden
       but if the parent is body then we should make changes on two places 
-      1. At html as overflow : hidden
+      1. At html as overflow : hidden  but in this case we dont see any changes in our styling, coz
+                              this is css default behaviour.
       2. At body as overflow : hidden  otherwise we get the unexpected behaviour
 sticky    ----------> combination of relative and fixed.
-    behave like relative if position: sticky but no top, left, right, bottom is apllied.
-    behave like fixed if above 4 are apllied.
+  behave like relative if "position: sticky" but no top, left, right, bottom is apllied.
+  behave like fixed if any of the above 4 properties (top, left, bottom, right) are apllied.
 
 
 Stacking context 
+Well basically we aligned all our parent elements along the z-axis,that's what we know
+and by adding position fixed to these, each element has its own stacking context.
+This means for the elements inside the headline element, the z-index will only have an impact onto the
+order of these elements inside the headline element but the general order of the headline element below
+contact us, this is defined by the z-index that we apply to the headline element right here.
 
  --------------------- BACKGROUND ----------------------------
 
