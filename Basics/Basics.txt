@@ -89,10 +89,19 @@ So the latest one overlapped the previous one.
 
 Absolute positioned ----->   containing element
 Fixed positioned -------->    view Port
+
+For Absolute positioning element
+Well for absolutely positioned elements, the positioning context is defined based on 2 cases.
+Case-1 :- If none of the ancestors, so of the parent elements, has a position property 
+applied, well then the positioning context of the element is simply the HTML element.
+
+case-2 :- If we have the second case that we have any position ancestors, then the closest ancestor which has the
+position property applied is the positioning context for this element.
+
 we know that these are fixed elements,we know that these are taken out of the document flow,
 they all have z-index of zero and because of that, the order in the HTML document defines 
 the order these are displayed along the z-axis.
-
+Absolute and relative are taking the element out of the document flow.
 relative ---------------->   its own current position
       if it go outside the parent element, then we can use overflow: hidden
       but if the parent is body then we should make changes on two places 
