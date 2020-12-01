@@ -19,9 +19,8 @@ body {
     
 }
 
-.main-header img{
+.main-header__brand img{
     height: 22px;
-    
 }
 
 .main-header > div {

@@ -125,6 +125,19 @@ contact us, this is defined by the z-index that we apply to the headline element
 
  --------------------- BACKGROUND ----------------------------
 
+Background-size : property.
+In this two main properties are there. 1. Contain 2. cover
+1. Contain generally try to make to show the whole image into the container element( and successfull shows it)
+   but Sometime left or right whitespace also shown.
+2. Cover generally covers the background container element by cropping the image in some fashion but their
+    is no whitespace left in container element.
+ 
+ Background-position.
+ center: 50% 50%  image cropped 50% left, right, top, bottom.
+    background-position : left 10% bottom 20%;
+    
+  Background-origin:
+
 The percentage values, you can define how much of the excess space,so of the parts of the 
 image that do not make it into the container,how these parts should be distributed.
 Now regarding the width, the full image is displayed in the container, it's not 
@@ -136,14 +149,23 @@ something you have to know, the default if you only set one value, is 50%.
 So if I set 50 and I reload, we get the exact same result as if we said no second value 
 at all. 50% means of the parts of the image that do not fit into the container, so that 
 are cropped of, 50% will be cropped at the bottom and 50% will be cropped at the top.
-
 If we set this to 10%, only 10% will be cropped at the top which means that more parts
 are cropped at the bottom, so the image is effectively pushed down in its container.
-
 If we set this to 100% on the other hand, all the content that has to be cropped will be cropped at
-
 the top and nothing will be cropped at the bottom,
-
 so this results in the bottom edge of the image being perfectly aligned to the bottom edge of the container
-
 and everything is cropped at the top.
+
+
+    ------------------------IMAGE TAG ------------------------------------
+
+"img" tag is not following the rules defined by its container element.
+Actually it does'nt having effect of percentage on it. But the reason for not following the 
+container element width because of inline element behaviour of container element, if we change
+the outside container element to inline-block or block etc. it will now follow the outside
+container rules like percentage, width etc.
+
+
+
+1.  LINEAR GRADIENT   AND RADIAL GRADIENT
+2.  
