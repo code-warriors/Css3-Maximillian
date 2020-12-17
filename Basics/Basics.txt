@@ -66,7 +66,7 @@ viewport simply means is the visible part of your web  or positioning context.
 .parent .child-1{
   top:100px;
 }  No affect on styling
-Note * All the positioning changes we want to apply right now are only possible if you apply 
+Note* All the positioning changes we want to apply right now are only possible if you apply 
 a value that is different from static, so different from the default value.
 
 .parent .child-1{
@@ -169,3 +169,13 @@ container rules like percentage, width etc.
 
 1.  LINEAR GRADIENT   AND RADIAL GRADIENT
 2.  
+
+----------------------------UNITS ----------------------------
+
+  UNITS
+pixels, px.
+percentage, %.
+root em, rem.
+em, em.
+viewport height, vh.
+viewport width, vw.
