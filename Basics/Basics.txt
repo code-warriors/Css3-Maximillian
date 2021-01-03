@@ -179,3 +179,20 @@ root em, rem.
 em, em.
 viewport height, vh.
 viewport width, vw.
+
+
+Absolute length ----------> pixels (Mostly ignored user settings )
+Viewport length ----------> vh, vw, vmin, vmax ( Adjust to current viewport )
+Font-Relative length---------> rem, em Adjust to default font size 
+Last 2 are part of % percentage
+
+            3 Grand rules for percentage
+
+1. position : fixed; That whenever we have an element which has the position fixed 
+              declaration applied and a percentage unit, well the containing block is the 
+              viewport.
+2. Position : absolute; So I repeat that, the percentage unit of our element with the 
+              position absolute declaration refers to the ancestor's content plus padding 
+              having position property applied other then static.
+3. Position : static; or Position : relative; The ancestor will be the closest BLOCK 
+              level element. 
