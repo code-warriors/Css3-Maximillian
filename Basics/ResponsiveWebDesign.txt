@@ -1,0 +1,28 @@
+------------------- Hardware PIXEL vs Software PIXEL ----------------
+
+Hardware Pixel converted into software or CSS pixels. by meta tag, by following line.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Website link ----->   mydevice.io
+
+--------------------Media Query -----------------------------
+Read the Media query as If, else statement.
+max-width:  atmost          ----  Desktop first approach
+min-width: atleast          ----  Mobile first approach
+
+majorily width of mobile-screen are in between 300px - 700px
+min-width : 40rem comes first in writing order then the min-width:60rem
+
+add all media Query below the all codes
+
+
+multiple media query can be used. 
+multiple media query conditions can be used using "And".
+        @media(min-width:20rem and oreintation: landscape) //Both need to be true.
+2. "," seperated this is working like OR operator
+        @media(min-width:20rem, oreintation: landscape)  //either one of them need to be true
+
+
+avoid using oreintation: landscape/potrait but instead of 
+min-width and min-height combination 
+
+--------------------------------------------------------------
