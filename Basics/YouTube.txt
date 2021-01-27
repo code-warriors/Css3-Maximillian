@@ -1,0 +1,1 @@
+1. always compress the image before deployed it to server to decrease the load time

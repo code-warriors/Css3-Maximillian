@@ -5,7 +5,6 @@ What's a "Rule" in CSS?
 A combination of selector (WHAT to style) and declaration(HOW to style).
 
 
-
 -----------------------DIVING DEEPER INTO CSS ----------------------
 
 percentage always refer to the value given by its parent element.
@@ -15,6 +14,14 @@ percentage always refer to the value given by its parent element.
                                         height :100% that means the height provided by the section (parent) to h1(child)
                                     }
 </section>
+
+---------------------------IMAGE-----------------------------------
+
+For image it doesnt affected by the height or width selected by the image-container.
+coz the outer element is itself a inline element.
+so to make img tag to respect the outer container we need to make outer container as 
+display : inline-block
+
 
 -----------------------BOX model ----------------------------
 

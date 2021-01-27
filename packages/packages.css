@@ -8,7 +8,7 @@ main{
     position: fixed;
     z-index: -1;
 }
-.plans{
+.package{
     width: 80%;
     box-sizing: border-box;
     margin:1rem 0px;
@@ -75,9 +75,31 @@ main{
     color: #b2bec3;
 }
 
-.plans:hover,
-.plans:active{
+.package:hover,
+.package:active{
     border-color: red;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+@media(min-width:40rem){
+    main{
+      margin:3rem auto;
+      max-width: 1500px;
+    }
+}
+
+@media(min-width:1500px){
+    .package{
+      border-left:4px solid #0e4f1f ;
+    }
+    .free{
+        border-right:  4px solid #0e4f1f !important;
+    }
+    .package:hover,
+    .package:active{
+        border-color: red !important;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+    }
 }
