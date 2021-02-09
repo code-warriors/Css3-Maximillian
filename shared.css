@@ -27,16 +27,24 @@ body {
     left:0;
     padding: 8px 16px;
     z-index: 1;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-header__brand img{
-    height: 100%;
+    /* height: 100%; */
+    height: 2.5rem;
+    vertical-align: middle;
 }
 
-.main-header > div {
+/* .main-header > div {
     display: inline-block;
     vertical-align: middle;
+} */
+
+main{
+    min-height: calc(100vh - 3.5rem - 8rem);
 }
 
 .toggle-button {
@@ -65,26 +73,27 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
+    /* display: inline-block; */
     height: 2.5rem;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
+    display: none;
+    /* text-align: right;
     width: calc(100% - 125px);
-    vertical-align: middle;
+    vertical-align: middle; */
 }
 
 .main-nav__items {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .main-nav__item {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0 16px;
 }
 
@@ -124,19 +133,23 @@ body {
 
 .main-footer{
     background: black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 1rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links{
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* text-align: center; */
 }
 .main-footer__link {
-    display: inline-block;
-    margin: 0 16px;
+    /* display: inline-block; */
+    margin: 0.5rem 1rem;
 }
 
 .main-footer__link a{
@@ -157,15 +170,19 @@ body {
     background: white;
     width: 80%;
     height: 100vh;
-  }
+}
   
   .mobile-nav__items {
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0rem auto;
     padding: 0;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .mobile-nav__item {
@@ -199,4 +216,29 @@ body {
 
 .open{
     display: block !important;
+}
+@media (min-width:40rem){
+    .main-footer__link{
+        margin:0 1rem;
+    }
+    .main-footer__links{
+        flex-direction: row;
+        justify-content: center;
+        align-content:center;
+    }
+    .main-footer{
+        background: black;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width:37rem)
+{
+    .main-nav{
+        display: flex;
+    }
+    .toggle-button{
+        display: none;
+    }
 }

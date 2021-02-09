@@ -25,4 +25,20 @@ multiple media query conditions can be used using "And".
 avoid using oreintation: landscape/potrait but instead of 
 min-width and min-height combination 
 
---------------------------------------------------------------
+------------------------------- FLEX BOX ---------------------------------------
+
+display: flex;
+default of flex-direction is left to right.
+Two axis are there main-axis and cross-axis.
+flex-direction used to decide the main-axis direction weather horizontal and vertical.
+Properties of flex-cotainer:
+
+   1.   align-items:center, flex-start, flex-end.
+
+        align-items used for the direction of cross axis.
+
+   2.   justify-content: affects our main-axis.
+   3.   align-content: allow us to align our items along the cross-axis. this comes 
+                       into play when we have second row to display means squeezing the 
+                       browser screen.
+   4.   Unordered List(ul) can also be flexed.                      
