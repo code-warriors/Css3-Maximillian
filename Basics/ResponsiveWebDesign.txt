@@ -41,4 +41,39 @@ Properties of flex-cotainer:
    3.   align-content: allow us to align our items along the cross-axis. this comes 
                        into play when we have second row to display means squeezing the 
                        browser screen.
-   4.   Unordered List(ul) can also be flexed.                      
+   4.   Unordered List(ul) can also be flexed.
+   5.   Flex-flow : the direction of main-axis by default Left to right.
+
+Properties of Flex-items
+
+    1.  Order property defines the order in which the current item is occurring.
+        at position first, second, third, fourth etc. Default value is 0.
+        highest position or order value occurred at last and item with lowest order value
+        comming at starting.
+    2.  Align-self property positioned the specific element according to the cross-axis.
+        align-self: flex-start / flex-end.
+    3.  Flex-grow : Default value is 0.
+        Defines the growing width of div items....as the flex-grow defines the remaining width 
+        of the browser propprtioned to the flex-grow items.
+        .item-1 => flex-grow : 1     .item-2 => flex-grow : 4 
+        remaining width divide into 5 parts, 
+        .item-1 gets (1/5)th part of it. and
+        .item-2 gets (4/5)th part of it.
+        when wrap to next row it will take up the entire width of browser.
+    4.  Flex-shrink : default value is 1.
+        If flex-shrink have value 0 then it will not shrink then its own defined width.
+        otherwise it behave in opposite way to flex-grow.
+        if you add a flex shrink value which is different from zero,it first allows us to 
+        allow our elements to shrink but if we apply a bigger shrink value to different 
+        elements, then this will also define how much more one element is allowed to 
+        shrink when comparing it to another element and that's actually what we 
+        can do with flex shrink.
+    5. Flex-basis : affects the width if the flex-direction goes from left to right, 
+                    affects the height if the flex-direction goes from top to bottom.
+                    So flex basis is not the width or the height,it can basically be 
+                    both which is simply dependent on the flex direction.So the flex basis will 
+                    fallback to the default value set for the main axis and that's important. If the 
+                    main axis goes from left to right, this will be the width right here, if the 
+                    main axis goes from top to bottom, then this will be the height.
+                    "auto" value means the fallback value i,e the value i,e defined into it.
+    6. flex : 0(grow) 1 (shrink) auto (basis)                                             
