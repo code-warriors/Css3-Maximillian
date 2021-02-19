@@ -75,5 +75,5 @@ Properties of Flex-items
                     fallback to the default value set for the main axis and that's important. If the 
                     main axis goes from left to right, this will be the width right here, if the 
                     main axis goes from top to bottom, then this will be the height.
-                    "auto" value means the fallback value i,e the value i,e defined into it.
+                    "auto" value means the fallback value i,e the value i,e already defined into it.
     6. flex : 0(grow) 1 (shrink) auto (basis)                                             

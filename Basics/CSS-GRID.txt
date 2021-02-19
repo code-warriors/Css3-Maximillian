@@ -1,0 +1,42 @@
+    CSS GRID
+
+grid-template-columns: defines the size and number of column in grid.
+grid-template-rows: defines the number of rows in grid.
+
+grid-column-start refers to the starting of grid line.
+grid-column-end refers to the ending of grid line.
+
+should study on "auto" in grid-column-start and grid-column-end
+                minmax(firstArgument, secondArgument)    
+
+grid-column-end: grid span 2  //means 2 columns for this grid.
+grid-column-end: -1 // to take the entire row of a grid.
+minmax(firstArgument, secondArgument) both the argument defines the min height and max height.
+
+
+Element can overlap and the Element which is over another Element is comming after the overlapped
+one. i.e in the dom order.
+
+Naming of Grid lines....
+grid-template-rows: [ row-1-start] 5rem [row-1-end row-2-start] minmax(5rem,auto) [row-2-end row-3-start] 100px;
+we can use these named grid lines in columns.
+        grid-row-start: row-2-start;
+
+        shorthand for column and rows for grid Elements.
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-column: 1 / -1;      similarly grid-row : row-2-start/ span 1;      
+
+        universal shorthand
+    grid-area : row-1-start / column-1-start / row-2-end / column-2-end.
+
+    gutters in Grid container to provide a gap between column and rows.
+.container{
+    display:grid;
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+    grid-gap:20px;   //  shorthand for above two statements.
+}
+
+Grid-template-names
+
