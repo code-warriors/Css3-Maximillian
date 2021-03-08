@@ -51,6 +51,25 @@ new line chanrater in html takes approx 5px length
         Overwrites "SPECIFICITY"(get high precedence) and all other selectors
         DONT use !important generally
 
+      Psuedo Class vs Psuedo element
+
+      Psuedo Class(:) defines style for special state of an element.
+      a:link{
+        //When link is not visited yet
+      }
+      a:visited{
+        //When link is visited
+      }
+      ul li:nth-child(3){} or ul li:first-child{} or ul li:last-child{}
+
+      Psuedo element(::) defines style for Specific part of an element
+      p :: before{  content: "this is"}      if p = "paragraph",   then after applying this css
+                     it will become   "this isparagraph"
+      p :: after{
+        content : "this is"            then p = "paragraphthis is"
+      }
+
+      h1 :: first-letter{}
 
         ------------ :not() -------------------
 a:not(.active)   
@@ -163,6 +182,9 @@ the top and nothing will be cropped at the bottom,
 so this results in the bottom edge of the image being perfectly aligned to the bottom edge of the container
 and everything is cropped at the top.
 
+Both the properties are very important.
+    Background-position: 90% 50%;
+    background-attachment: fixed
 
     ------------------------IMAGE TAG ------------------------------------
 
