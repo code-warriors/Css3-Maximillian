@@ -164,6 +164,17 @@ In this two main properties are there. 1. Contain 2. cover
     
   Background-origin:
 
+  Read Also about following properties :-
+  background-position, background-attachment, background-size, background-origin  
+
+  background-position : used for clipping the main image. 90% 50%. center(generally used)
+  background-attachment:fixed;   //generally used.
+  background-size: contain / cover(generally used);
+  background-origin: padding-box   // image starts from left edge of padding
+                     content-box   // image starts from content element
+                     border-box    //image starts from upper left corner of border
+  background-clip:                      
+
 The percentage values, you can define how much of the excess space,so of the parts of the 
 image that do not make it into the container,how these parts should be distributed.
 Now regarding the width, the full image is displayed in the container, it's not 
@@ -184,7 +195,7 @@ and everything is cropped at the top.
 
 Both the properties are very important.
     Background-position: 90% 50%;
-    background-attachment: fixed
+    background-attachment: fixed;
 
     ------------------------IMAGE TAG ------------------------------------
 

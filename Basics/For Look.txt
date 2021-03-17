@@ -1,0 +1,43 @@
+        GRADIENT 
+We can use GRADIENT with background property.
+
+background: linear-gradient(<direction>, color1, color2,.... ), url("image-path") no-repeat center /cover;
+
+Allow us to display smooth transition between colors.
+1. linear GRADIENT
+2. RADIAL gradient
+
+        SHADOW 
+
+Text-shadow used for the shadow of Text.
+    text-shadow: property need both vertical and horizontal value if only one is provided then
+                    it will not work.
+                    First value is horizontal and 
+                    Second value is vertical
+                    Third value is for BLUR effect.
+                    Fourth value is for color of shadow.    
+       ex text-shadow: 20px 40px 10px;     
+
+Box-shadow used for the box-shadow.
+
+        TRANSITION
+
+transition-property:which property of element we want to effect on like width, height, color, bg-color etc.
+transition-duration: how much time till it runs
+transition-delay: how much time it delays to starts
+transition-timing-function: 
+
+        ANIMATION
+
+@keyframes anim{}  //anim is the animation name
+ property of animation
+
+        animation-name:anim;
+        animation-duration:4s;
+        animation-delay:4s;
+        animation-iteration-count: finite-number/infinite;
+        animation-direction: 
+        animation-timing-function:
+        animation-fill-mode:        
+
+
