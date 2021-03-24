@@ -1,3 +1,13 @@
+ .container>.item.item-${item - $ }*6    //Shortcut for the VSCODE
+<div class="container">
+    <div class="item item-1">item - 1 </div>
+    <div class="item item-2">item - 2 </div>
+    <div class="item item-3">item - 3 </div>
+    <div class="item item-4">item - 4 </div>
+    <div class="item item-5">item - 5 </div>
+    <div class="item item-6">item - 6 </div>
+</div>
+
 What is "Specificity" about?
 It is all about resolving conflict that rises from multiple CSS rule which target the same element.
 
